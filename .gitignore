@@ -6,10 +6,14 @@ venv/
 .env
 
 # Data & Logs (Local only)
-data/
-logs/*.log
+# Keep the data folder but ignore all its contents
+data/*
+!data/.gitkeep
+
+# Ignore specific local index/pickle files if they appear elsewhere
 *.index
 *.pkl
+logs/*.log
 
 # IDEs
 .vscode/
