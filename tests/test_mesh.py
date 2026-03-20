@@ -1,4 +1,7 @@
 import asyncio
+import sys
+import os
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from src.core.mesh import OmniMeshBus
 from src.agents.base_agent import BaseAgent
 from src.core.schema import AgentContract
